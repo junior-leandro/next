@@ -1,36 +1,29 @@
-import Image from 'next/image'
-import HomePage from '@/pages/home'
-import Image2 from '../../public/Tech.png'
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>
+    <div className={`
+    flex flex-col justify-center gap-5 items-center h-screen w-screen bg-[url('/bg.jpg')]
+    bg-no-repeat 
+    `}>
+      <div className="flex flex-col justify-center gap-5 items-center">
+        
+        <h1 className="text-5xl font-light">
+          Hello, earhlings!
+        </h1>
+        <span className="mb-10">
+          Here you can find photos of our planet, the other planets and galaxies too!
+        </span>
 
-
+        <div className="flex flex-row w-full justify-center items-center">
+          <input type="search" name="Search" id="" placeholder=" Search for an image" className={`
+     rounded-xl h-9 w-4/5
+     `} />
+          <button className="w-1/5 bg-gray-900 rounded-xl h-10">
+            Search
+          </button>
+        </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div>
-        <Image
-          src={Image2}
-          alt="texto"
-          height={350}
-        />
-
-
-        <HomePage />
-      </div>
-    </main>
+    </div>
   )
 }
