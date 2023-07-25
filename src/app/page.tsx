@@ -1,26 +1,30 @@
-'use client'
-
-import Navbar from "./components/Navbar"
-import PicOfDay from "./components/Pic"
-import Home from "./pages/home"
-
 
 export default function HomePage() {
 
   
   return (
-    <div className="bg-[url('/bg.jpg')] bg-cover bg-no-repeat">
+    <div className={`
+        flex flex-col justify-center gap-5 items-center w-full
+      `}>
+          <div className="flex flex-col justify-center gap-7 items-center w-1/2">
+            <h1 className="text-5xl mt-20">
+              Hello, Earthlings!
+            </h1>
+            <span className="mb-6 text-zinc-500 font-semibold">
+            You can search for pictures of our planet, other planets and galaxies!
+            </span>
+            <div className="flex flex-row w-full justify-center items-center w-11/12">
+              <input type="search" name="Search" id="" placeholder="Search for an image" 
+              className="rounded-xl h-12 w-4/5 text-zinc-900 p-5"/>
+              <button className="w-1/5 bg-gray-900 rounded-xl h-12">
+                Search
+              </button>
+            </div>
+           
+          </div>
+        </div>
 
-      <header className="flex justify-center items-center">
-        <Navbar />
-      </header>
-      <main className="flex flex-col justify-center gap-5 items-center w-full">
-        <PicOfDay />
-      </main>
-      <footer className="text-center text-sm inset-x-0 bottom-0 m-2.5">
-        <span>
-          Developed by <strong className="cursor-pointer">junior.dev.br</strong> | API provided by NASA</span>
-      </footer>
-    </div>
+
+  
   )
 }
