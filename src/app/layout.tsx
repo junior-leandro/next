@@ -41,7 +41,7 @@ export default function RootLayout({
                   <Link href="/earth">Earth Today</Link>
                 </li>
                 <li className="p-3 mx-3.5 cursor-pointer hover:text-gray-400">
-                  <Link href="/hover">Pic's of Mars Rover</Link>
+                  <Link href="/rover">Pic's of Mars Rover</Link>
                 </li>
                 <li className="p-3 mx-3.5 cursor-pointer hover:text-gray-400">
                   <Link href="/">Search</Link>
