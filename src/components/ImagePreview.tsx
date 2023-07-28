@@ -1,10 +1,11 @@
+'use client'
 
 import Image from "next/image";
 import Link from "next/link";
 
 
 
-export default function ImagePreview({ thumbnailUrl, nasaId }) {
+export default function ImagePreview({ thumbnailUrl, nasaId }:any) {
     return (
         <div className="w-screen flex justify-center items-center">
             <Link as={`/photo/${nasaId}`} href="/photo/[id]">
@@ -12,8 +13,9 @@ export default function ImagePreview({ thumbnailUrl, nasaId }) {
                     <Image width={250} height={250} src={thumbnailUrl} alt="PIC" />
                     <div>Nasa ID: {nasaId}</div>
                 </a>
-
             </Link>
+            <span>OPORA</span>
         </div>
     );
 }
+
