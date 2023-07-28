@@ -1,6 +1,6 @@
 # Project under development ⚠
 
-![NASA Project Preview](./public/screenshot.jpg)
+![NASA Project Preview](/public/screenshot.jpg)
 
 ## 🛠 Developing Skills
 
