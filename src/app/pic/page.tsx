@@ -27,10 +27,10 @@ export default function PicOfDay() {
   return (
     <div className="flex justify-center items-center mt-10">
 
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center max-h-screen">
         <div className="flex justify-center items-center w-1/2 h-full">
           {photoData.media_type === "image" ?
-              <img src={photoData.url} alt={photoData.title} className="w-7/12 rounded-3xl shadow-2xl"/>
+              <img src={photoData.url} alt={photoData.title} className="w-7/12 max-h-full rounded-3xl shadow-2xl"/>
               :
               <iframe src={photoData.url} className="h-7/12 rounded-3xl shadow-2xl"> </iframe>
             }

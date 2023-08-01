@@ -2,8 +2,9 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function photo({ photo }: any) {
+export default function photo({ photo }) {
   const router = useRouter();
+
   if (!router.isFallback && !photo) {
     return (
       <div>ERROR 404 PAGE NOT FOUND</div>
@@ -31,7 +32,7 @@ export default function photo({ photo }: any) {
   )
 }
 
-export async function getStaticProps({ params }: any) {
+export async function getStaticProps({ params }) {
   const nasa_id = params.id;
   const results = await fetch(`https://images-api.nasa.gov/asset/${nasa_id}`);
   const previews = await results.json();
@@ -50,7 +51,7 @@ export async function getStaticPaths() {
 
   return {
     paths:
-      items?.map((nasa: any) => ({
+      items?.map((nasa) => ({
         params: {
           id: nasa.data[0].nasa_id,
         }

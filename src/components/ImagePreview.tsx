@@ -5,7 +5,7 @@ import Link from "next/link";
 
 
 
-export default function ImagePreview({ thumbnailUrl, nasaId }:any) {
+export default function ImagePreview({ thumbnailUrl, nasaId }) {
     return (
         <div className="w-screen flex justify-center items-center">
             <Link as={`/photo/${nasaId}`} href="/photo/[id]">
@@ -18,4 +18,5 @@ export default function ImagePreview({ thumbnailUrl, nasaId }:any) {
         </div>
     );
 }
+
 

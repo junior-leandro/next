@@ -46,9 +46,6 @@ export default function RootLayout({
                 <li className="p-3 mx-3.5 cursor-pointer hover:text-gray-400">
                   <Link href="/">Search</Link>
                 </li>
-                <li className="p-3 mx-3.5 cursor-pointer text-yellow-300">
-                  <Link href="/galery">TEST</Link>
-                </li>
               </ul>
             </div>
           </nav>
