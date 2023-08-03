@@ -9,7 +9,7 @@ export default function PicOfDay() {
     media_type: string,
     url: string,
     explanation: string,
-  };
+  }
 
   const urlApod = 'https://api.nasa.gov/planetary/apod?api_key=rmqnLe1gDaQduvT4Sw9nIwArY8Ka6ITTsCHNXAwe';
   const [photoData, setPhotoData] = useState<ResponseData[]>([]);

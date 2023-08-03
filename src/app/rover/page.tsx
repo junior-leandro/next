@@ -1,6 +1,8 @@
 import Image from "next/image"
 import React from "react"
-
+/*
+http://mars-photos.herokuapp.com/api/v1/rovers/Curiosity/photos?earth_date=2023-07-31&camera=fhaz
+*/
 export default function MarsHover() {
     return (
 
