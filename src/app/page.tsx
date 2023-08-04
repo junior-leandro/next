@@ -1,12 +1,10 @@
-import Home from "./home/page";
+import HomePage from "./home/HomePage";
 
-export default function HomePage() {
+export default function Home() {
   
-  const [search, setSearch] = useState("");
-  const [photos, setPhotos] = useState(items);
 
   return (
-    <Home/>
+    <HomePage/>
     
   )
 }

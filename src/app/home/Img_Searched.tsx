@@ -1,14 +1,14 @@
+import Image from 'next/image';
 import React from 'react';
 
 export default function Img_Searched({ photo }) {
 
     return (
         <>
-            <PictureNASA>
                 <div>
                     <div className="Imagecontainer">
                         <>
-                            <Image width={960} priority height={540} src={photo} />
+                        <Image width={960} priority height={540} src={photo} alt="pic" />
                         </>
 
                     </div>
@@ -18,7 +18,6 @@ export default function Img_Searched({ photo }) {
                         </a>
                     </div>
                 </div>
-            </PictureNASA>
         </>
     );
 
@@ -52,7 +51,3 @@ export async function getStaticPaths() {
 }
 
 
-const PictureNASA = styled.div`
-`;
-const Image = styled.img`
-`;  

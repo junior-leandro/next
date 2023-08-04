@@ -55,7 +55,7 @@ export default function RootLayout({
           {children}
         </main>
 
-        <footer className="text-center text-sm absolute inset-x-0 bottom-0 m-2.5">
+        <footer className="text-center text-sm fixed inset-x-0 bottom-0 m-2.5">
           <span>
             Developed by <strong className="cursor-pointer">junior.dev.br</strong> | API provided by NASA</span>
         </footer>
