@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       {}
-      <body className="bg-[url('/bg.jpg')] bg-cover bg-no-repeat h-screen w-scren">
+      <body className="bg-[url('/bg.jpg')] bg-cover bg-fixed bg-no-repeat h-screen w-screen">
         <header className="flex justify-center items-center w-full">
           <nav>
             <div className='flex flex-row my-10'>
@@ -51,7 +51,7 @@ export default function RootLayout({
           </nav>
         </header>
 
-        <main className='w-full'>
+        <main className='w-full bg-scroll'>
           {children}
         </main>
 
