@@ -19,7 +19,7 @@ export default function HomePage({ items }) {
                 <span className="mb-6 text-zinc-500 font-semibold">
                     You can search for pictures of our planet, other planets and galaxies!
                 </span>
-                <div className="flex flex-row w-full justify-center items-center">
+                <div className="flex flex-row w-full justify-center items-center mb-10">
                     <input type="text" name="Search" id="" placeholder="Search for an image"
                         className="rounded-xl h-12 w-4/5 text-zinc-900 p-5" onChange={(e) => setSearch(e.target.value)}/>
                     <button className="w-1/5 bg-gray-900 rounded-xl h-12 cursor-pointer"
@@ -35,7 +35,7 @@ export default function HomePage({ items }) {
                     </button>
                 </div>
                 <div>
-                    <div>
+                    <div className="gap-2 flex flex-wrap justify-between mb-12 mx-3">
                         {photos && photos.map((preview) => (
                                 <ImagePreview
                                     key={preview.data[0].title}
