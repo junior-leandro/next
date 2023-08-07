@@ -12,7 +12,7 @@ export default function ImagePreview({ nasaPicture, title, description }: any) {
             className="h-96 w-96 object-cover rounded-lg"
             onClick={() => setShow(true)} />
         </div>
-        <span className="text-lg font-semibold text-gray-200">{title}</span>
+        <span className="text-lg font-semibold text-gray-200 p-1">{title}</span>
       </div>
 
       <div className="hidden">

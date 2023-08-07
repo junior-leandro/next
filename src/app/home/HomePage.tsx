@@ -35,7 +35,7 @@ export default function HomePage({ items }) {
                     </button>
                 </div>
                 <div>
-                    <div className="gap-2 flex flex-wrap justify-between mb-12 mx-3">
+                    <div className="gap-2 w-screen flex flex-wrap justify-between mb-12 mx-3">
                         {photos && photos.map((preview) => (
                                 <ImagePreview
                                     key={preview.data[0].title}

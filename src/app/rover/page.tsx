@@ -7,7 +7,7 @@ export default function MarsHover() {
     return (
 
         <div className="flex flex-col justify-center items-center">
-            <h2 className="text-2xl">Last Photo of Mars Rover's</h2>
+            <h2 className="text-2xl">Last Photo of Mars Rover&apos;s</h2>
             <div className="flex justify-center items-center w-screen p-10 my-10 gap-2">
                
                 <div className="flex flex-col items-center bg-gradient-to-t rounded-3xl from-black to-50%">

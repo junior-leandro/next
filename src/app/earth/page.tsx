@@ -17,7 +17,7 @@ export default function EarthToday() {
                         width="600"
                         height="600"
                         alt="Sem alt" />
-                        <span className="text-xs">This image was taken by NASA's EPIC camera onboard the NOAA DSCOVR spacecraft</span>
+                        <span className="text-xs">This image was taken by NASA&apos;s EPIC camera onboard the NOAA DSCOVR spacecraft</span>
 
                 </div>
             </div>
