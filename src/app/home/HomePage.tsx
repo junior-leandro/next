@@ -21,7 +21,7 @@ export default function HomePage({ items }) {
                 </span>
                 <div className="flex flex-row w-full justify-center items-center mb-10">
                     <input type="text" name="Search" id="" placeholder="Search for an image"
-                        className="rounded-xl h-12 w-4/5 text-zinc-900 p-5" onChange={(e) => setSearch(e.target.value)}/>
+                        className="rounded-xl h-12 w-4/5 text-zinc-900 p-5" onChange={(e) => setSearch(e.target.value)} />
                     <button className="w-1/5 bg-gray-900 rounded-xl h-12 cursor-pointer"
                         disabled={search === ""}
                         onClick={
@@ -34,21 +34,21 @@ export default function HomePage({ items }) {
                         Search
                     </button>
                 </div>
-                <div>
-                    <div className="gap-2 w-screen flex flex-wrap justify-between mb-12 mx-3">
-                        {photos && photos.map((preview) => (
-                                <ImagePreview
-                                    key={preview.data[0].title}
-                                    nasaPicture={preview.links[0].href}
-                                    title={preview.data[0].title}
-                                    description={preview.data[0].description}
-                                />
-                            ))
-                        }
-                    </div>
+
+
+            </div>
+            <div className="w-full px-4">
+                <div className="gap-2 w-full flex flex-wrap justify-between">
+                    {photos && photos.map((preview) => (
+                        <ImagePreview
+                            key={preview.data[0].title}
+                            nasaPicture={preview.links[0].href}
+                            title={preview.data[0].title}
+                            description={preview.data[0].description}
+                        />
+                    ))
+                    }
                 </div>
-
-
             </div>
         </div>
 
