@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 
 export default function PicOfDay() {
 
-  interface ResponseData {
+interface ResponseData {
     title: string,
     media_type: string,
     url: string,
@@ -12,7 +12,7 @@ export default function PicOfDay() {
   }
 
   const urlApod = 'https://api.nasa.gov/planetary/apod?api_key=rmqnLe1gDaQduvT4Sw9nIwArY8Ka6ITTsCHNXAwe';
-  const [photoData, setPhotoData] = useState<ResponseData[]>();
+  const [photoData, setPhotoData] = useState<ResponseData>();
 
   useEffect(() => {
     (async () => {

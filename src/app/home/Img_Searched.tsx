@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-export default function Img_Searched({ photo }) {
+export default function Img_Searched({ photo }:any) {
 
     return (
         <>
@@ -22,7 +22,7 @@ export default function Img_Searched({ photo }) {
     );
 
 };
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }:any) {
     const nasa_id = params.id;
     const results = await fetch(`https://images-api.nasa.gov/asset/${nasa_id}`);
     const previews = await results.json();
@@ -41,7 +41,7 @@ export async function getStaticPaths() {
 
     return {
         paths:
-            items?.map((nasa) => ({
+            items?.map((nasa:any) => ({
                 params: {
                     id: nasa.data[0].nasa_id,
                 },
