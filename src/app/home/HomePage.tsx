@@ -3,7 +3,7 @@
 import { useState } from "react";
 import ImagePreview from "./ImagePreview";
 
-export default function HomePage({ items }) {
+export default function HomePage({ items }:any) {
 
     const [search, setSearch] = useState("");
     const [photos, setPhotos] = useState(items);
@@ -39,7 +39,7 @@ export default function HomePage({ items }) {
             </div>
             <div className="w-full px-4">
                 <div className="gap-2 w-full flex flex-wrap justify-between">
-                    {photos && photos.map((preview) => (
+                    {photos && photos.map((preview:any) => (
                         <ImagePreview
                             key={preview.data[0].title}
                             nasaPicture={preview.links[0].href}
